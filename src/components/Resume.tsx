@@ -17,6 +17,7 @@ import {
   siDocker,
   siTypescript,
   siReact,
+  siNextdotjs,
 } from "simple-icons/icons";
 
 /** 인쇄 시 Chrome으로 인쇄하시오 */
@@ -94,6 +95,17 @@ export function Resume() {
                   className="w-4 h-4"
                   viewBox="0 0 24 24"
                   role="img"
+                  aria-label="Next.js"
+                >
+                  <path d={siNextdotjs.path} fill={`#${siNextdotjs.hex}`} />
+                </svg>
+                Next.js
+              </li>
+              <li className="flex items-center gap-2">
+                <svg
+                  className="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  role="img"
                   aria-label="TypeScript"
                 >
                   <path d={siTypescript.path} fill={`#${siTypescript.hex}`} />
@@ -160,6 +172,18 @@ export function Resume() {
       {/* Work Experience */}
       <div>
         <ResumeSection title="경력" icon={<BriefcaseIcon size={20} />}>
+          <ExperienceItem
+            title="틸다"
+            position="Front-end Engineer"
+            period="2026.01 ~ "
+            descriptions={[
+              "AI 시각화 서비스 백오피스 FE 개발 담당",
+              "기존 서비스의 접근성 및 사용성 개선을 위해, 폼 구조와 데이터 변경 흐름(form/mutation)을 재정비",
+              "내부 운영 효율을 높이기 위한 MDXEditor 기반 리치 텍스트 에디터를 설계·개선하고, 백오피스 환경에 맞게 커스터마이징",
+              "팀 내 공통 로직을 선언형 유틸로 정리하고, TypeScript 기반 타입 안정성을 체계화하여 개발 생산성 향상",
+            ]}
+          />
+
           <ExperienceItem
             title="창톡"
             position="Front-end Engineer"
