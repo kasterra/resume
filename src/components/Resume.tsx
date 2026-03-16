@@ -33,7 +33,8 @@ export function Resume() {
               이휘찬 이력서
             </h1>
             <p className="text-lg text-gray-600 mt-1">
-              🙌 함께 잘하기 위해 고민하는 개발자
+              변화가 반복되는 환경에서 경계를 설계하여 시스템을 안정화하는
+              엔지니어
             </p>
           </div>
           <a
@@ -51,21 +52,16 @@ export function Resume() {
       <ResumeSection title="자기소개" icon={<UserIcon size={20} />}>
         <div className="text-gray-700 leading-relaxed space-y-2">
           <p>
-            사용자의 입장과 팀 협업을 함께 고려하며 제약 속에서도 최선의 UX를
-            구현해왔습니다. 화면을 그리는 데 그치지 않고 서비스 전반의 흐름과
-            운영 관점까지 이해하며, 필요한 경우 배포 환경 구성이나 서버 연동
-            구조도 직접 다뤄왔습니다.
+            단순 UI 구현을 넘어, 콘텐츠 작성 파이프라인·플랫폼 간 통신·도메인
+            경계 정의 등 복잡한 흐름을 사람이 다룰 수 있는 구조로
+            정리해왔습니다.사용자 경험과 팀 협업을 함께 고려하며, 표현 계층과
+            상태 계층을 분리하고 변경 비용을 낮추는 구조 설계를 지향합니다.
           </p>
-          <p>
-            또한, 열린 태도와 지식 공유로 팀과 함께 성장하는 개발자를 지향하며,
-            기술 블로그를 통해 꾸준히 기록하고 나눔을 실천합니다. 이런 협업
-            방식에 대해 동료 디자이너는 이렇게 피드백했습니다.
-          </p>
+          <blockquote className="border-l-4 border-gray-300 pl-4 mt-4 italic text-gray-600">
+            "디자인적 실험과 개선이 자유롭게 이루어질 수 있었던 협업이었다" —
+            협업 디자이너 피드백
+          </blockquote>
         </div>
-        <blockquote className="border-l-4 border-gray-300 pl-4 mt-4 italic text-gray-600">
-          "디자인적 실험과 개선이 자유롭게 이루어질 수 있었던 협업이었다" — 협업
-          디자이너 피드백
-        </blockquote>
       </ResumeSection>
       {/* Tech Stack (categorized) */}
       <ResumeSection title="기술 스택" icon={<Code2Icon size={20} />}>
@@ -174,13 +170,13 @@ export function Resume() {
         <ResumeSection title="경력" icon={<BriefcaseIcon size={20} />}>
           <ExperienceItem
             title="틸다"
-            position="Front-end Engineer"
+            position="Front-end Engineer Intern"
             period="2026.01 ~ "
             descriptions={[
               "AI 시각화 서비스 백오피스 FE 개발 담당",
-              "기존 서비스의 접근성 및 사용성 개선을 위해, 폼 구조와 데이터 변경 흐름(form/mutation)을 재정비",
-              "내부 운영 효율을 높이기 위한 MDXEditor 기반 리치 텍스트 에디터를 설계·개선하고, 백오피스 환경에 맞게 커스터마이징",
-              "팀 내 공통 로직을 선언형 유틸로 정리하고, TypeScript 기반 타입 안정성을 체계화하여 개발 생산성 향상",
+              "서비스 접근성 및 사용성 개선: form 구조·데이터 mutation 흐름 재정비 및 UI 접근성 개선",
+              "Release Note 시스템 구현: TipTap 기반 에디터 및 백오피스 작성 기능 개발",
+              "DX 개선: 선언형 유틸 패턴을 코드베이스에 내재화하고 TypeScript 타입 구조 개선",
             ]}
           />
 
@@ -227,12 +223,33 @@ export function Resume() {
         <ResumeSection title="주요 경험" icon={<FileTextIcon size={20} />}>
           <ExperienceItem
             title="기술 블로그 — Kasterra's Archive"
-            period="2020.12~"
+            period="2020.12 ~"
             descriptions={[
               "누적 노출수 33.9만, 클릭수 2.26만 달성",
+              "단순 구현 기록을 넘어, 도구·아키텍처 선택 배경과 설계 판단을 정리하는 기술 글 작성",
               "대표 글: Yarn Berry로 React.js 프로젝트 시작하기 (조회수 4900+회, 부스트컨퍼런스 발표 주제)",
               "React-beautiful-dnd 튜토리얼 해설 (조회수 2000+)",
-              "정규표현식 튜토리얼 (조회수 1400+)",
+              "정규표현식 튜토리얼: 패턴 설계와 문제 해결 관점 정리 (조회수 1400+)",
+            ]}
+          />
+          <ExperienceItem
+            title="부스트캠프 커피챗 호스트 — 의사결정 프레임 기반 멘토링"
+            period="2026.02 ~ 2026.03"
+            descriptions={[
+              "부스트캠프 수료생 대상 커피챗 호스트로 배정되어 사전 질문 수집 → 답변 문서화 → 1:1 상담 진행의 구조화된 세션 설계",
+              "단순 조언이 아닌, 커리어 의사결정 기준(스트레스 내성·역할 범위·리스크 인지 등)을 정리하여 스스로 판단할 수 있는 프레임 제공",
+              <>
+                참가자 후기 확보 및 회고 글 작성으로 지식 공유 확장.{" "}
+                <a
+                  href="https://kasterra.github.io/boostcamp-coffeechat-host/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800"
+                >
+                  후기/회고 글
+                  <ExternalLinkIcon size={14} className="inline ml-1" />
+                </a>
+              </>,
             ]}
           />
           <ExperienceItem
