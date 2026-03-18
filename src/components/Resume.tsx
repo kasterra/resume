@@ -174,7 +174,13 @@ export function Resume() {
             period="2026.01 ~ "
             descriptions={[
               "AI 시각화 서비스 백오피스 FE 개발 담당",
-              "서비스 접근성 및 사용성 개선: form 구조·데이터 mutation 흐름 재정비 및 UI 접근성 개선",
+              "서비스 접근성 및 사용성 개선: form 구조·데이터 흐름 재정비 및 UI 접근성 개선 구현",
+              {
+                content:
+                  "→ 해당 개선을 통해 한국 ICT 임팩트협회 사회적가치 AI 인증 획득에 기여",
+                bullet: false,
+                indent: "sm",
+              },
               "Release Note 시스템 구현: TipTap 기반 에디터 및 백오피스 작성 기능 개발",
               "DX 개선: 선언형 유틸 패턴을 코드베이스에 내재화하고 TypeScript 타입 구조 개선",
             ]}
