@@ -171,7 +171,7 @@ export function Resume() {
           <ExperienceItem
             title="틸다"
             position="Front-end Engineer Intern"
-            period="2026.01 ~ "
+            period="2026.01 ~ 2026.03"
             descriptions={[
               "AI 시각화 서비스 백오피스 FE 개발 담당",
               "서비스 접근성 및 사용성 개선: form 구조·데이터 흐름 재정비 및 UI 접근성 개선 구현",
